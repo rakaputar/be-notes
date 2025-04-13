@@ -8,4 +8,8 @@ app.use(cors());
 app.use(express.json());
 app.use(route);
 
+app.get("/", (res, req) => {
+  res.send("running...");
+});
+
 app.listen(3000,()=> console.log("server berjalan di port 3000"))
